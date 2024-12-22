@@ -20,7 +20,8 @@ public class SecurityConfig {
 		return httpSecurity
 				.authorizeRequests(requests -> requests.anyRequest().authenticated())
 				.formLogin()
-				.and().build();
+				.and()
+				.build();
 	}
 	
 	@Bean
